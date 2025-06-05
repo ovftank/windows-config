@@ -15,8 +15,6 @@
 - Node.js package manager: only `pnpm` and `pnpx`/`pnpm dlx`; never `npm`, `npx`, or `yarn`.
 - Python execution: never run `python`, `python3`, or `py` directly; use `uv run ...`, `uv tool run ...`, or explicit `uvx python ...` wrappers when a skill requires it.
 - Search/navigation on this machine: never use `grep` or `glob` tools. Use `srcwalk` for code navigation and `rg` for raw path/text search.
-- `srcwalk` is the primary code navigator. For non-trivial code investigation, run `srcwalk guide` first, then prefer `srcwalk overview|context|trace|deps|discover|show`.
-- Use `rg --files` for file/path discovery. Use `rg -n` for content search, `-F` for literal matches, and `-g` or `-t/-T` to scope files.
 - `uv run` is the default Python runner on this machine. Use `uv run <cmd>` for project commands, `uv run -m <module>` for modules, and `uv run --with <pkg> <cmd>` when an ephemeral dependency is needed.
 - JavaScript/TypeScript: prefer Arrow Functions, Destructuring, and Template Literals; never use `var`.
 - Python: use `traceback` for error handling; keep logs concise like `err fetching data`.

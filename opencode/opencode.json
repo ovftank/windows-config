@@ -7,8 +7,13 @@
         "reserved": 20000,
         "tail_turns": 6
     },
-    "default_agent": "plan",
+    "default_agent": "ask",
     "formatter": true,
+    "permission": {
+        "skill": {
+            "customize-opencode": "deny"
+        }
+    },
     "lsp": {},
     "provider": {
         "anthropic": {

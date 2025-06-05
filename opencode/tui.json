@@ -166,8 +166,7 @@
     "leader_timeout": 750,
     "mouse": true,
     "plugin": [
-        "./plugins/codex-manager.tsx",
-        "./plugins/prompt-optimizer.tsx"
+        "./plugins/codex-manager.tsx"
     ],
     "prompt": {
         "max_height": 12,
